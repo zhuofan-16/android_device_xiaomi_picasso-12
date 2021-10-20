@@ -92,10 +92,8 @@ TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
 SELINUX_IGNORE_NEVERALLOWS := true
-TARGET_FORCE_PREBUILT_KERNEL := true
-TARGET_KERNEL_CONFIG := gauguin_user_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/picasso
-
+TARGET_KERNEL_CONFIG := picasso_user_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sm7250
 # Platform
 TARGET_BOARD_PLATFORM := lito
 
