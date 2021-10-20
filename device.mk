@@ -36,7 +36,7 @@ TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
 # Kernel Modules
-KERNEL_MODULES_DIR := $(LOCAL_PATH)/prebuilt/modules
+KERNEL_MODULES_DIR := $(LOCAL_PATH)/prebuilt/modules-12.5.5
 
 ifneq ($(PRODUCT_TARGET_VNDK_VERSION),)
 KERNEL_MODULES_COPY := $(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/lib/modules
@@ -403,10 +403,7 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
-# Parts
-PRODUCT_PACKAGES += \
-    XiaomiParts
-
+# Par
 # Perf
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.2.vendor
@@ -468,8 +465,6 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils.xml \
     telephony-ext
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
 
 # Touchscreen
 PRODUCT_PACKAGES += \
